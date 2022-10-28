@@ -1,0 +1,21 @@
+<h2>Add Category</h2>
+<form (submit) ="onSubmit($event)">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <label for="name">Name:</label></div>
+      <div class ="col-md-4">
+      <input type="text" id="name" name="name" placeholder="Enter Category Name" required autofocus [(ngModel)]="name">
+
+    </div>  </div><br /> <br />
+
+
+      <div class="row">
+        <div class="col-md-4">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div> <br />
+    <a routerLink="/home" class="btn btn-info">Back</a>
+  </div>
+
+</form>

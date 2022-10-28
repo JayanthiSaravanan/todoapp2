@@ -1,0 +1,38 @@
+<section>
+  <h1 class="display-5">Categories</h1>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Sno</th>
+      <th>Name</th>
+      <th>Action</th>
+
+
+    </tr>
+  </thead>
+
+
+  <tbody id ="category-table">
+
+    <tr *ngFor ="let category of categories; let i=index" >
+      <td>{{i+1}}</td>
+      <!-- <td>{{category | json}}</td> -->
+      <td>{{category.name}}</td>
+      <td><a href="/view-category/{{category.id}}" class="btn btn-info">View </a> &nbsp;
+      <a href="/edit-category/{{category.id}}" class="btn btn-info">Edit</a> &nbsp;
+      <!-- <button type="button" class ="btn btn-danger" (click)="deletecategory(category.id)" >Delete</button> -->
+    </tr>
+
+<br />
+
+    <a routerLink="/add-category1" class="btn btn-success"><i class="fa-solid fa-plus"></i> Add Category </a> <br /><br />
+
+    <a routerLink="/home" class="btn btn-info">Back</a>
+
+  </tbody>
+</table>
+
+
+
+</section>

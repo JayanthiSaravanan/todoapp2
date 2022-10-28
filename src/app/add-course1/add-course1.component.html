@@ -1,0 +1,28 @@
+<h2>Add Course</h2>
+
+<form [formGroup]="courseForm" (ngSubmit)="onSubmit($event)">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <label for="name">Name : </label>
+        <input type="name" class="name" id="name" formControlName="name" />
+      </div>
+    </div><br /> <br />
+
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <label for="category"> Category: </label>
+        <input type="category" class="category" id="category" formControlName="category" />
+      </div>
+    </div><br />
+
+    <div class="row">
+      <div class="col-md-5"></div>
+      <div class="col-md-4">
+        <button type="submit" class="btn btn-info">Submit</button>
+      </div>
+    </div>
+  </div>
+</form>

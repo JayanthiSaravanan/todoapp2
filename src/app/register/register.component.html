@@ -1,0 +1,61 @@
+<h3> Registration</h3>
+<form (submit)="onSubmit($event)" id ="regform" name = "regform">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="fname">First Name:</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" id="fname" name="fname" placeholder="First Name" required autofocus [(ngModel)]="fname">
+                    </div><br /><br />
+
+                    <div class="row">
+                      <div class="col-md-4">
+                          <label for="lname">Last Name:</label>
+                      </div>
+                      <div class="col-md-4">
+                          <input type="text" id="lname" name="lname" placeholder="Last Name" required autofocus [(ngModel)]="lname">
+                      </div><br /><br />
+
+                      <div class="row">
+                        <div class="col-md-4">
+                            <label for="gender">Gender:</label>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-check">
+                            <input type="radio" class="form-check-" id="gender" name="gender" value="M" checked [(ngModel)]="gender">Male
+
+                            <input type="radio" class="form-check-label" id="gender" name="gender" value="F" [(ngModel)]="gender">Female
+                        </div><br /><br />
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-4">
+                            <label for="city">City:</label>
+                          </div>
+                        <div class ="col-md-4">
+                          <input type="text" name="city" id="city" placeholder="Enter city" [(ngModel)]="city">
+                        </div>
+</div><br /> <br />
+
+                        <div class="row">
+                          <div class="col-md-4">
+                            <label for="state">State:</label>
+                          </div>
+                        <div class ="col-md-4">
+                          <input type="text" name="state" id="state" placeholder="Enter State" [(ngModel)]="state">
+
+                        </div>
+
+                      </div>
+                      <div class="row">
+                        <div class ="col-md-4">
+
+<button type="submit" class ="btn btn-success">Submit</button>
+</div>
+</div>
+</div>
+                  </div>
+                    </div>
+
+
+              </form>

@@ -1,0 +1,49 @@
+<section>
+  <h1> Project - {{project?.name }} </h1>
+  <form submit ="onSubmit($event)">
+<!-- <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>
+        Project
+      </th>
+    </tr>
+  </thead>
+  <tbody id = project-table>
+    <tr *ngIf = "project">
+      <td> {{project.name}} </td>
+    </tr>
+  </tbody>
+</table> -->
+
+<h3>Features</h3>
+<div *ngIf="project">
+
+  <!-- {{project.features | json}} -->
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Feature Name</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let feature of project.features;let i=index;">
+        <td>{{i+1}}</td>
+        <td>{{feature.fname}}</td>
+        <td>
+
+          View
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<button btn="submit" class="btn btn-success">Submit</button><br /> <br />
+<a routerLink="/projects/{{project.id}}/add_feature" class="btn btn-primary"> Add Feature</a><br/><br />
+<a routerLink="/feature-list" class="btn btn-primary"> List Feature</a>
+  </form>
+</section>

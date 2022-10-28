@@ -1,0 +1,21 @@
+<section>
+  <h1>Course -{{id}}</h1>
+  <form submit="onSubmit($event)">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Course </th>
+      </tr>
+    </thead>
+
+  <tbody id ="course-table">
+    <tr *ngIf = "course">
+    <td>{{course.name}}</td>
+    </tr><br />
+
+
+    <a routerLink="/add_feature" class="btn btn-success">Add Feature</a>
+  </tbody>
+  </table>
+  </form>
+</section>

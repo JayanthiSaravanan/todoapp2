@@ -1,0 +1,44 @@
+<h3 align="center">Add Course</h3>
+
+<form (submit)="onSubmit($event)">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <label for="name">Name:</label>
+      </div>
+      <div class="col-md-4">
+        <input type="text"
+          name="name"
+          id="name"
+          placeholder="course name"
+          required
+          autofocus
+          [(ngModel)]="name"
+        />
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-md-4">
+        <label for="Category">Category:</label>
+      </div>
+      <div class="col-md-4">
+        <select name="form control" id="assign" placeholder="select" [(ngModel)] ="category">
+          <option value="Database">Database</option>
+          <option value="Java">Java</option>
+          <option value="Frontend">Frontend</option>
+        </select>
+      </div>
+    </div>
+    <br />
+  </div>
+
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <button type="btn" class="btn btn-primary">Submit</button>
+<a routerLink ="/home" class="btn btn-info"> Back</a>
+
+    </div>
+  </div>
+</form>

@@ -1,0 +1,22 @@
+
+<h2>Edit Course  --{{id}}</h2>
+
+{{ course | json}}
+<div *ngIf="course">
+<form (submit) ="onSubmit($event)">
+  <div class="row">
+    <div class="col-25">
+      <label for="name">Name:</label>
+    </div>
+      <div class ="col-75">
+      <input type="text" id="name" name="name" placeholder="Enter Category Name" required autofocus [(ngModel)]="course.name"> <br /> <br />
+      </div>
+  </div>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+</form>
+</div>

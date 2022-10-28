@@ -1,0 +1,23 @@
+
+<h2>Edit Category  --{{id}}</h2>
+
+{{category | json}}
+<div *ngIf="category">
+<form (submit) ="onSubmit($event)">
+  <div class="row">
+    <div class="col-25">
+      <label for="name">Name:</label>
+    </div>
+      <div class ="col-75">
+      <input type="text" id="name" name="name" placeholder="Enter Category Name"required autofocus [(ngModel)]="category.name"> <br /> <br />
+      </div>
+  </div>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+        <button type="submit" class="btn btn-primary">Submit</button><br />
+        <a routerLink="/categories" class="btn btn-info">Back</a>
+      </div>
+    </div>
+</form>
+</div>

@@ -1,0 +1,17 @@
+<h2> Update Course {{id}}</h2>
+
+{{course | json }}
+<form [formGroup]="updateCourseForm" (ngSubmit)="onSubmit($event)">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <label for="name"> Name: </label>
+      <input type="text" class="name" formControlName ="name">
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-success">
+    Submit
+  </button>
+</div>
+</form>

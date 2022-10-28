@@ -1,0 +1,39 @@
+<section>
+
+  <h1>Projects</h1>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th> SNO </th>
+        <th> Project Name</th>
+
+        <th>Git hub</th>
+      <th>sonarcloud</th>
+      <th>Netlify</th>
+      <th> Action </th>
+    </tr>
+    </thead>
+
+    <tbody id ="project-table">
+      <tr *ngFor="let project of projects; let i = index">
+<td>{{i+1}}</td>
+<td>{{project.name}}</td>
+<td>{{project.github}}</td>
+<td>{{project.sonar}}</td>
+<td>{{project.netlify}}</td>
+
+
+<td><a href ="/view-project/{{project.id}}" class="btn btn-info">View </a> &nbsp;
+ <a href ="/edit-project/{{project.id}}" class="btn btn-info">Edit </a> &nbsp;
+
+ <button type="button" class="btn btn-danger" (click)="deleteproject(project.id)" >Delete</button>
+</td>
+
+      </tr> <br />
+
+      <a routerLink="/project" class ="btn btn-success"><i class="fa-solid fa-plus"></i>Add Project</a> <br /><br />
+
+<a routerLink="/home" class="btn btn-info">Back</a>
+    </tbody>
+  </table>
+</section>

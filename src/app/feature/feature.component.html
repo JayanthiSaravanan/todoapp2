@@ -1,0 +1,38 @@
+<h3>
+  Project - {{project?.name}}
+</h3>
+<h3>
+  Add Feature
+</h3>
+<form (submit)="onSubmit($event)">
+
+  {{project | json}}
+
+  <!-- <div class="row">
+    <div class ="col-4"></div>
+    <div class="col-4">
+      <label for="name" class="form-label">Project Name:</label>
+      <select name="projectId" id ="projectId" class= "form-control" [(ngModel)]="projectId" >
+        <option value="" disabled> -- Select --</option>
+
+          <option value ="{{p.pname}}" *ngFor="let p of projects"> {{p.pname}}</option>
+
+      </select>
+    </div>
+    </div><br /> -->
+
+<div class="row">
+  <div class="col-4"></div>
+  <div class="col-4">
+    <label for ="name" class="form-label"> Feature Name:</label>
+    <input type ="name" name="name"  class ="form-control"placeholder="Enter Feature Name"  [(ngModel)]="fname">
+  </div>
+</div><br />
+
+<div class="row">
+  <div class="col-md-6"></div>
+    <div class="col-4">
+    <button type ="submit" class="btn btn-info">Submit</button>
+</div>
+  </div>
+</form>

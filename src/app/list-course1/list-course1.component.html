@@ -1,0 +1,29 @@
+
+
+<section>
+
+  <h1 class="display-5" align ="center">Courses</h1>
+
+  <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Sno</th>
+      <th>Course</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="course-table">
+    <tr *ngFor ="let course of courses;let i=index" >
+      <td>{{i+1}}</td>
+      <!-- <td>{{course | json}}</td> -->
+      <td>{{course.name }}</td>
+     <td> <a href ="/view-course/{{course.id}}" class="btn btn-info">View </a> &nbsp;
+      <a href ="/edit-course1/{{course.id}}" class="btn btn-info">Edit</a> &nbsp;
+
+    </td>
+  </tr>
+
+</tbody>
+
+</table>
+</section>

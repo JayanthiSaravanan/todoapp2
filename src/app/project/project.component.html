@@ -1,0 +1,53 @@
+
+<div class="container">
+<h1> Project</h1>
+
+<form (submit)="onSubmit($event)">
+
+  <div class="row">
+    <div class = "col-md-4"></div>
+    <div class = "col-md-4">
+      <label for ="name">Name: </label> &nbsp;&nbsp;
+      <input type="text" id="name" name="name"class="form-control"  placeholder="Enter Project" required autofocus [(ngModel)]="name">
+  </div><br />
+  &nbsp;&nbsp;
+  <div class ="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <label for ="github">Git Hub URL:</label>&nbsp; &nbsp;
+  <input type="text" id="github" name="github" class="form-control" placeholder="Enter Git hub url" [(ngModel)]="github">
+    </div><br />
+    &nbsp;&nbsp;
+
+  <div class ="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <label for ="sonar" >SonarCloud:</label>&nbsp;&nbsp;
+  <input type="text" id="sonar" name="sonar" class="form-control" placeholder="Enter sonarcloud url" [(ngModel)]="sonar">
+    </div><br />
+
+    &nbsp;&nbsp;
+  <div class ="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <label for ="netlify" >Netlify URL:</label>&nbsp;&nbsp;
+  <input type="text" id="netlify" name="netlify" class="form-control" placeholder="Enter Netlify url" [(ngModel)]="netlify">
+    </div>
+  </div><br />
+  &nbsp;&nbsp;
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+  <button type="submit" class="btn btn-primary">Submit</button> &nbsp; &nbsp;
+  <a routerLink="/home" class="btn btn-info">Back</a>
+</div>
+
+  </div>
+</div>
+  </div>
+  </div>
+
+
+
+</form>
+</div>

@@ -1,0 +1,21 @@
+<section>
+  <h1>Feature-List</h1>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Feature</th>
+    </tr>
+  </thead>
+  <tbody id =project-table>
+<tr *ngFor="let project of projects; let i=index; ">
+  <td>{{project.pname}}</td>
+  <td>{{project.fname}}</td>
+</tr>
+  </tbody>
+</table>
+
+</section>
+<!-- <button btn ="submit" class="btn btn-primary"> Back </button> -->
+<a routerLink="/list-project" class="btn btn-info"> back</a>

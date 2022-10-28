@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+.home{
+  color:aqua;
+  text-align: center;
+  font-size: 22x;
+  margin-top: 180px;
+  background-attachment: fixed;
+}
+
+h1{
+  text-align-last:center;
+  text-shadow:salmon;
+}
+h2{
+  text-align-last: center;
+}
+
+h3{
+  text-align-last: center;
+}
+
+h5{
+  text-align-last: center;
+}
+
+body{
+  background-color:burlywood;
+
+
+
+
+}

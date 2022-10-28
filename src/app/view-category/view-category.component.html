@@ -1,0 +1,23 @@
+<section>
+  <h1 class="display-5">Category - {{ id }}</h1>
+  <form submit="onSubmit($event)">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>name</th>
+        </tr>
+      </thead>
+
+      <tbody id="category-table">
+        <tr *ngIf="category">
+          <!-- <td>{{category | json}}</td> -->
+          <td>{{ category.name }}</td>
+        </tr>
+
+
+
+        <br />
+      </tbody>
+    </table>
+  </form>
+</section>
